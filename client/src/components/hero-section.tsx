@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Parallax Background */}
       <div 
         className="absolute inset-0 parallax-bg"
@@ -20,7 +20,8 @@ const HeroSection = () => {
           backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-kenya-blue/80 via-kenya-green/70 to-kenya-orange/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/85 via-kenya-blue/75 to-kenya-green/80"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       {/* Floating Elements */}
@@ -43,23 +44,26 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
         <motion.h1 
           {...fadeInUp}
-          className="text-5xl md:text-7xl font-bold mb-6"
+          className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-2xl"
+          style={{ textShadow: '0 4px 8px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.9)' }}
         >
-          Empowering <span className="text-kenya-yellow">Kenyan</span> Businesses
+          Empowering <span className="text-yellow-300 drop-shadow-lg">Kenyan</span> Businesses
         </motion.h1>
         
         <motion.h2 
           {...fadeInUp}
           transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-          className="text-2xl md:text-4xl font-light mb-8"
+          className="text-2xl md:text-4xl font-light mb-8 drop-shadow-xl"
+          style={{ textShadow: '0 3px 6px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.9)' }}
         >
-          with Innovative <span className="text-kenya-orange font-semibold">Technology Solutions</span>
+          with Innovative <span className="text-orange-300 font-semibold">Technology Solutions</span>
         </motion.h2>
         
         <motion.p 
           {...fadeInUp}
           transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
-          className="text-xl md:text-2xl mb-10"
+          className="text-xl md:text-2xl mb-10 drop-shadow-lg"
+          style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 1px 2px rgba(0,0,0,0.9)' }}
         >
           From stunning websites to powerful mobile apps and custom software - we transform your vision into digital reality
         </motion.p>

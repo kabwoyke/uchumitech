@@ -76,7 +76,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-gray-50 scroll-mt-20">
       <div className="container mx-auto px-6">
         <motion.div 
           {...fadeInUp}
