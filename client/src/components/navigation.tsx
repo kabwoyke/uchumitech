@@ -37,7 +37,7 @@ const Navigation = () => {
             className="text-2xl font-bold"
           >
             <span className="tech-primary">UchumiTech</span>
-            <span className="tech-purple">Solution</span>
+            <span className="tech-secondary">Solution</span>
           </motion.div>
           
           {/* Desktop Navigation */}

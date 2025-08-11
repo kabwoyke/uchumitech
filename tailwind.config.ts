@@ -69,7 +69,7 @@ export default {
         'tech-primary': 'var(--tech-primary)',
         'tech-secondary': 'var(--tech-secondary)',
         'tech-accent': 'var(--tech-accent)',
-        'tech-purple': 'var(--tech-purple)',
+        'tech-light': 'var(--tech-light)',
         'tech-neutral': 'var(--tech-neutral)',
         'tech-dark': 'var(--tech-dark)',
       },

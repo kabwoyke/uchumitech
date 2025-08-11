@@ -42,12 +42,12 @@
   --radius: 1.3rem;
   
   /* Modern tech colors */
-  --tech-primary: hsl(221 83% 53%);
-  --tech-secondary: hsl(210 100% 66%);
-  --tech-accent: hsl(168 100% 35%);
-  --tech-purple: hsl(261 52% 59%);
-  --tech-gradient-start: hsl(221 83% 53%);
-  --tech-gradient-end: hsl(261 52% 59%);
+  --tech-primary: #3674B5;
+  --tech-secondary: #578FCA;
+  --tech-accent: #A1E3F9;
+  --tech-light: #D1F8EF;
+  --tech-gradient-start: #3674B5;
+  --tech-gradient-end: #578FCA;
   --tech-neutral: hsl(210 16% 93%);
   --tech-dark: hsl(210 11% 15%);
 }
@@ -126,12 +126,12 @@
     background-color: var(--tech-accent);
   }
   
-  .tech-purple {
-    color: var(--tech-purple);
+  .tech-light {
+    color: var(--tech-light);
   }
   
-  .bg-tech-purple {
-    background-color: var(--tech-purple);
+  .bg-tech-light {
+    background-color: var(--tech-light);
   }
   
   .bg-tech-neutral {

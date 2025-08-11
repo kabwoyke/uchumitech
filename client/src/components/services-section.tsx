@@ -22,14 +22,14 @@ const ServicesSection = () => {
       title: "Mobile App Development",
       description: "Native and cross-platform mobile applications that engage users and drive business growth. From concept to app store deployment, we handle it all.",
       features: ["iOS & Android", "Cross-Platform", "UI/UX Design", "App Store Optimization"],
-      gradient: "from-tech-accent to-green-600",
+      gradient: "from-tech-accent to-cyan-500",
     },
     {
       icon: Settings,
       title: "Custom Software Solutions",
       description: "Tailored software solutions designed specifically for your business needs. From automation tools to enterprise systems, we build software that scales.",
       features: ["Business Automation", "Database Solutions", "API Development", "Cloud Integration"],
-      gradient: "from-tech-purple to-purple-600",
+      gradient: "from-tech-secondary to-blue-600",
     },
   ];
 

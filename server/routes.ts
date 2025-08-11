@@ -14,7 +14,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const contact = await storage.createContact(validatedData);
       
       // Create nodemailer transporter
-      const transporter = nodemailer.createTransporter({
+      const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
           user: process.env.EMAIL_USER || 'noreply@uchumitechsolution.com',

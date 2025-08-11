@@ -47,7 +47,7 @@ const Footer = () => {
           <motion.div {...fadeInUp}>
             <div className="text-2xl font-bold mb-4">
               <span className="tech-primary">UchumiTech</span>
-              <span className="tech-purple">Solution</span>
+              <span className="tech-secondary">Solution</span>
             </div>
             <p className="text-gray-400 mb-4">
               Empowering businesses worldwide with cutting-edge technology solutions.

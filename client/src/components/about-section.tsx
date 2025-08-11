@@ -25,7 +25,7 @@ const AboutSection = () => {
             >
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 About <span className="tech-primary">UchumiTech</span>
-                <span className="tech-purple">Solution</span>
+                <span className="tech-secondary">Solution</span>
               </h2>
               <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
                 Founded with a vision to transform businesses through technology, UchumiTechSolution specializes in crafting innovative digital solutions that drive growth and efficiency. We believe every business deserves cutting-edge technology that scales with their ambitions.
@@ -44,7 +44,7 @@ const AboutSection = () => {
                   >
                     <div className={`text-3xl md:text-4xl font-bold mb-2 ${
                       index === 0 ? 'tech-primary' : 
-                      index === 1 ? 'tech-accent' : 'tech-purple'
+                      index === 1 ? 'tech-secondary' : 'text-blue-600'
                     }`}>
                       {stat.number}
                     </div>

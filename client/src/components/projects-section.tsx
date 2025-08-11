@@ -65,12 +65,12 @@ const ProjectsSection = () => {
       "E-commerce": "bg-tech-primary/10 text-tech-primary",
       "Responsive": "bg-tech-accent/10 text-tech-accent",
       "Corporate": "bg-tech-primary/10 text-tech-primary",
-      "CMS": "bg-tech-purple/10 text-tech-purple",
+      "CMS": "bg-tech-secondary/10 text-tech-secondary",
       "Tech": "bg-tech-accent/10 text-tech-accent",
       "Dashboard": "bg-tech-secondary/10 text-tech-secondary",
       "Agriculture": "bg-tech-accent/10 text-tech-accent",
       "Events": "bg-tech-primary/10 text-tech-primary",
-      "Payment": "bg-tech-purple/10 text-tech-purple",
+      "Payment": "bg-tech-secondary/10 text-tech-secondary",
     };
     return colors[tag] || "bg-gray-100 text-gray-600";
   };
@@ -156,7 +156,7 @@ const ProjectsSection = () => {
             whileHover={cardHover}
             className="project-card"
           >
-            <Card className="h-full bg-gradient-to-br from-tech-primary to-tech-purple text-white flex items-center justify-center">
+            <Card className="h-full bg-gradient-to-br from-tech-primary to-tech-secondary text-white flex items-center justify-center">
               <CardContent className="p-8 text-center">
                 <Plus className="text-4xl mb-4 opacity-80 mx-auto" size={48} />
                 <h3 className="text-xl font-bold mb-3">Your Project Next?</h3>
