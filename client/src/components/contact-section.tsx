@@ -98,8 +98,9 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <motion.div 
-            {...fadeInUp}
-            animate={isInView ? "animate" : "initial"}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h2>
