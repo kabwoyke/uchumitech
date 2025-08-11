@@ -66,11 +66,12 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
-        'kenya-blue': 'var(--kenya-blue)',
-        'kenya-orange': 'var(--kenya-orange)',
-        'kenya-green': 'var(--kenya-green)',
-        'kenya-yellow': 'var(--kenya-yellow)',
-        'kenya-light-blue': 'var(--kenya-light-blue)',
+        'tech-primary': 'var(--tech-primary)',
+        'tech-secondary': 'var(--tech-secondary)',
+        'tech-accent': 'var(--tech-accent)',
+        'tech-purple': 'var(--tech-purple)',
+        'tech-neutral': 'var(--tech-neutral)',
+        'tech-dark': 'var(--tech-dark)',
       },
       keyframes: {
         "accordion-down": {

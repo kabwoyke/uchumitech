@@ -46,11 +46,11 @@ const Footer = () => {
           {/* Company Info */}
           <motion.div {...fadeInUp}>
             <div className="text-2xl font-bold mb-4">
-              <span className="kenya-blue">UchumiTech</span>
-              <span className="kenya-orange">Solution</span>
+              <span className="tech-primary">UchumiTech</span>
+              <span className="tech-purple">Solution</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Empowering Kenyan businesses with innovative technology solutions.
+              Empowering businesses worldwide with cutting-edge technology solutions.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -59,7 +59,7 @@ const Footer = () => {
                   href={social.href}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 bg-kenya-blue rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+                  className="w-10 h-10 bg-tech-primary rounded-full flex items-center justify-center hover:bg-tech-secondary transition-colors"
                   aria-label={social.label}
                 >
                   <social.icon size={18} />
@@ -105,7 +105,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {contactDetails.map((detail, index) => (
                 <li key={index} className="flex items-center text-gray-400">
-                  <detail.icon className="mr-3 kenya-orange flex-shrink-0" size={16} />
+                  <detail.icon className="mr-3 tech-accent flex-shrink-0" size={16} />
                   <span className="text-sm">{detail.text}</span>
                 </li>
               ))}
@@ -120,7 +120,7 @@ const Footer = () => {
         >
           <p>
             &copy; 2024 UchumiTechSolution. All rights reserved. Made with{" "}
-            <span className="text-red-500">❤️</span> in Kenya.
+            <span className="text-red-500">❤️</span> for innovation.
           </p>
         </motion.div>
       </div>

@@ -23,18 +23,18 @@ const AboutSection = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                About <span className="kenya-blue">UchumiTech</span>
-                <span className="kenya-orange">Solution</span>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                About <span className="tech-primary">UchumiTech</span>
+                <span className="tech-purple">Solution</span>
               </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Born in the heart of Kenya's thriving tech ecosystem, UchumiTechSolution is on a mission to bridge the digital gap for businesses across East Africa. We believe that every business, regardless of size, deserves access to world-class technology solutions.
+              <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+                Founded with a vision to transform businesses through technology, UchumiTechSolution specializes in crafting innovative digital solutions that drive growth and efficiency. We believe every business deserves cutting-edge technology that scales with their ambitions.
               </p>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Our team of passionate developers, designers, and digital strategists combines local market knowledge with global best practices to deliver solutions that don't just meet expectations - they exceed them.
+              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+                Our expert team of developers, designers, and strategists combines technical excellence with creative innovation to deliver solutions that don't just meet expectations - they revolutionize how you do business.
               </p>
               
-              <div className="grid grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-3 gap-4 md:gap-6 text-center">
                 {stats.map((stat, index) => (
                   <motion.div
                     key={stat.label}
@@ -42,9 +42,9 @@ const AboutSection = () => {
                     animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
                     transition={{ delay: 0.6 + index * 0.1, duration: 0.5 }}
                   >
-                    <div className={`text-3xl font-bold mb-2 ${
-                      index === 0 ? 'kenya-blue' : 
-                      index === 1 ? 'kenya-green' : 'kenya-orange'
+                    <div className={`text-3xl md:text-4xl font-bold mb-2 ${
+                      index === 0 ? 'tech-primary' : 
+                      index === 1 ? 'tech-accent' : 'tech-purple'
                     }`}>
                       {stat.number}
                     </div>

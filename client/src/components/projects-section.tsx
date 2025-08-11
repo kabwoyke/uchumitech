@@ -62,15 +62,15 @@ const ProjectsSection = () => {
 
   const getTagColor = (tag: string) => {
     const colors: Record<string, string> = {
-      "E-commerce": "bg-kenya-blue/10 text-kenya-blue",
-      "Responsive": "bg-kenya-green/10 text-kenya-green",
-      "Corporate": "bg-kenya-blue/10 text-kenya-blue",
-      "CMS": "bg-kenya-orange/10 text-kenya-orange",
-      "Tech": "bg-kenya-green/10 text-kenya-green",
-      "Dashboard": "bg-kenya-blue/10 text-kenya-blue",
-      "Agriculture": "bg-kenya-green/10 text-kenya-green",
-      "Events": "bg-kenya-blue/10 text-kenya-blue",
-      "Payment": "bg-kenya-orange/10 text-kenya-orange",
+      "E-commerce": "bg-tech-primary/10 text-tech-primary",
+      "Responsive": "bg-tech-accent/10 text-tech-accent",
+      "Corporate": "bg-tech-primary/10 text-tech-primary",
+      "CMS": "bg-tech-purple/10 text-tech-purple",
+      "Tech": "bg-tech-accent/10 text-tech-accent",
+      "Dashboard": "bg-tech-secondary/10 text-tech-secondary",
+      "Agriculture": "bg-tech-accent/10 text-tech-accent",
+      "Events": "bg-tech-primary/10 text-tech-primary",
+      "Payment": "bg-tech-purple/10 text-tech-purple",
     };
     return colors[tag] || "bg-gray-100 text-gray-600";
   };
@@ -84,8 +84,8 @@ const ProjectsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Projects</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Our Projects</h2>
+          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto">
             Discover some of our recent work and see how we've helped businesses across Kenya achieve their digital transformation goals.
           </p>
         </motion.div>
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
           ref={ref}
           variants={staggerContainer}
           animate={isInView ? "animate" : "initial"}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+          className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto"
         >
           {projects.map((project, index) => (
             <motion.div
@@ -135,7 +135,7 @@ const ProjectsSection = () => {
                         variant="ghost"
                         size="icon"
                         asChild
-                        className="kenya-orange hover:bg-kenya-orange/10"
+                        className="tech-primary hover:bg-tech-primary/10"
                       >
                         <a href={project.url} target="_blank" rel="noopener noreferrer">
                           <ExternalLink size={18} />
@@ -156,14 +156,14 @@ const ProjectsSection = () => {
             whileHover={cardHover}
             className="project-card"
           >
-            <Card className="h-full bg-gradient-to-br from-kenya-blue to-kenya-green text-white flex items-center justify-center">
+            <Card className="h-full bg-gradient-to-br from-tech-primary to-tech-purple text-white flex items-center justify-center">
               <CardContent className="p-8 text-center">
                 <Plus className="text-4xl mb-4 opacity-80 mx-auto" size={48} />
                 <h3 className="text-xl font-bold mb-3">Your Project Next?</h3>
                 <p className="opacity-90 mb-4">Ready to bring your vision to life?</p>
                 <Button 
                   onClick={scrollToContact}
-                  className="bg-white text-kenya-blue hover:bg-gray-100 font-semibold"
+                  className="bg-white text-tech-primary hover:bg-gray-100 font-semibold"
                 >
                   Get Started
                   <ArrowRight className="ml-2" size={16} />

@@ -20,15 +20,15 @@ const HeroSection = () => {
           backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/85 via-kenya-blue/75 to-kenya-green/80"></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-tech-dark/90 via-tech-primary/80 to-tech-purple/75"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
       {/* Floating Elements */}
       <motion.div 
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-10 w-20 h-20 bg-kenya-yellow rounded-full opacity-20"
+        className="absolute top-20 left-10 w-20 h-20 bg-tech-accent rounded-full opacity-25"
       />
       <motion.div 
         animate={{ y: [0, -15, 0] }}
@@ -38,7 +38,7 @@ const HeroSection = () => {
       <motion.div 
         animate={{ y: [0, -25, 0] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute top-1/3 right-20 w-12 h-12 bg-kenya-green rounded-full opacity-25"
+        className="absolute top-1/3 right-20 w-12 h-12 bg-tech-secondary rounded-full opacity-30"
       />
       
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
@@ -47,7 +47,7 @@ const HeroSection = () => {
           className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-2xl"
           style={{ textShadow: '0 4px 8px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.9)' }}
         >
-          Empowering <span className="text-yellow-300 drop-shadow-lg">Kenyan</span> Businesses
+          Empowering <span className="text-blue-300 drop-shadow-lg">Digital</span> Innovation
         </motion.h1>
         
         <motion.h2 
@@ -56,7 +56,7 @@ const HeroSection = () => {
           className="text-2xl md:text-4xl font-light mb-8 drop-shadow-xl"
           style={{ textShadow: '0 3px 6px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.9)' }}
         >
-          with Innovative <span className="text-orange-300 font-semibold">Technology Solutions</span>
+          with Cutting-Edge <span className="text-cyan-300 font-semibold">Technology Solutions</span>
         </motion.h2>
         
         <motion.p 
@@ -74,7 +74,7 @@ const HeroSection = () => {
         >
           <Button 
             onClick={scrollToContact}
-            className="bg-kenya-orange hover:bg-kenya-orange/90 text-white font-semibold px-8 py-4 text-lg rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            className="bg-gradient-to-r from-tech-primary to-tech-purple hover:from-tech-primary/90 hover:to-tech-purple/90 text-white font-semibold px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
             <span>Contact Us Today</span>
             <ArrowRight className="ml-3" size={20} />

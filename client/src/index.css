@@ -41,12 +41,15 @@
   --font-mono: Menlo, monospace;
   --radius: 1.3rem;
   
-  /* Kenyan-inspired colors */
-  --kenya-blue: hsl(203.8863 88.2845% 53.1373%);
-  --kenya-orange: hsl(25 95% 53%);
-  --kenya-green: hsl(160 84% 39%);
-  --kenya-yellow: hsl(45 93% 89%);
-  --kenya-light-blue: hsl(213 100% 91%);
+  /* Modern tech colors */
+  --tech-primary: hsl(221 83% 53%);
+  --tech-secondary: hsl(210 100% 66%);
+  --tech-accent: hsl(168 100% 35%);
+  --tech-purple: hsl(261 52% 59%);
+  --tech-gradient-start: hsl(221 83% 53%);
+  --tech-gradient-end: hsl(261 52% 59%);
+  --tech-neutral: hsl(210 16% 93%);
+  --tech-dark: hsl(210 11% 15%);
 }
 
 .dark {
@@ -99,36 +102,69 @@
 }
 
 @layer utilities {
-  .kenya-blue {
-    color: var(--kenya-blue);
+  .tech-primary {
+    color: var(--tech-primary);
   }
   
-  .bg-kenya-blue {
-    background-color: var(--kenya-blue);
+  .bg-tech-primary {
+    background-color: var(--tech-primary);
   }
   
-  .kenya-orange {
-    color: var(--kenya-orange);
+  .tech-secondary {
+    color: var(--tech-secondary);
   }
   
-  .bg-kenya-orange {
-    background-color: var(--kenya-orange);
+  .bg-tech-secondary {
+    background-color: var(--tech-secondary);
   }
   
-  .kenya-green {
-    color: var(--kenya-green);
+  .tech-accent {
+    color: var(--tech-accent);
   }
   
-  .bg-kenya-green {
-    background-color: var(--kenya-green);
+  .bg-tech-accent {
+    background-color: var(--tech-accent);
   }
   
-  .bg-kenya-yellow {
-    background-color: var(--kenya-yellow);
+  .tech-purple {
+    color: var(--tech-purple);
   }
   
-  .bg-kenya-light-blue {
-    background-color: var(--kenya-light-blue);
+  .bg-tech-purple {
+    background-color: var(--tech-purple);
+  }
+  
+  .bg-tech-neutral {
+    background-color: var(--tech-neutral);
+  }
+  
+  .bg-tech-dark {
+    background-color: var(--tech-dark);
+  }
+  
+  .bg-tech-gradient {
+    background: linear-gradient(135deg, var(--tech-gradient-start), var(--tech-gradient-end));
+  }
+
+  /* Enhanced responsive utilities */
+  .responsive-padding {
+    @apply px-4 sm:px-6 md:px-8 lg:px-12;
+  }
+  
+  .responsive-text-lg {
+    @apply text-base sm:text-lg md:text-xl;
+  }
+  
+  .responsive-text-xl {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+  
+  .responsive-gap {
+    @apply gap-4 sm:gap-6 md:gap-8;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
   }
 
   .parallax-bg {

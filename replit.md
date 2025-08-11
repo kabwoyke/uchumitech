@@ -7,12 +7,13 @@ This is a modern, full-stack portfolio website for UchumiTechSolution, a Kenyan 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Color scheme preference: Modern tech colors (moved from Kenyan-inspired to professional tech palette on 2025-01-11)
 
 ## System Architecture
 
 ### Frontend Architecture
 - **Framework**: React with TypeScript using Vite as the build tool
-- **Styling**: Tailwind CSS with custom Kenyan-inspired color scheme and shadcn/ui component library
+- **Styling**: Tailwind CSS with modern tech color scheme (deep blues, teals, purples) and shadcn/ui component library
 - **Animations**: Framer Motion for smooth page transitions and interactive elements
 - **State Management**: TanStack Query for server state management
 - **Routing**: Wouter for lightweight client-side routing
@@ -64,3 +65,5 @@ The application uses Drizzle ORM with PostgreSQL-compatible schema definition:
 - **SEO Ready**: Semantic HTML structure and meta tag support
 - **Accessibility**: ARIA labels and keyboard navigation support
 - **Contact Integration**: Direct email forwarding to business email address
+- **Color Palette**: Modern tech colors with primary blues (#4F46E5), accent teals (#00A96E), and purple gradients (#8B5CF6)
+- **Enhanced Responsiveness**: Mobile-first design with improved grid layouts and responsive typography

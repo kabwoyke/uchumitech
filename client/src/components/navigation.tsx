@@ -36,8 +36,8 @@ const Navigation = () => {
             transition={{ delay: 0.2 }}
             className="text-2xl font-bold"
           >
-            <span className="kenya-blue">UchumiTech</span>
-            <span className="kenya-orange">Solution</span>
+            <span className="tech-primary">UchumiTech</span>
+            <span className="tech-purple">Solution</span>
           </motion.div>
           
           {/* Desktop Navigation */}
@@ -49,7 +49,7 @@ const Navigation = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index }}
                 onClick={() => scrollToSection(link.href)}
-                className="text-gray-700 hover:text-kenya-blue transition-colors duration-300 font-medium"
+                className="text-gray-700 hover:text-tech-primary transition-colors duration-300 font-medium"
               >
                 {link.label}
               </motion.button>
@@ -85,7 +85,7 @@ const Navigation = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 * index }}
                   onClick={() => scrollToSection(link.href)}
-                  className="block w-full text-left py-2 text-gray-700 hover:text-kenya-blue transition-colors duration-300"
+                  className="block w-full text-left py-2 text-gray-700 hover:text-tech-primary transition-colors duration-300"
                 >
                   {link.label}
                 </motion.button>

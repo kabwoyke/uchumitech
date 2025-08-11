@@ -103,8 +103,8 @@ const ContactSection = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
               Ready to transform your business with cutting-edge technology? Let's discuss your project and create something amazing together.
             </p>
           </motion.div>
@@ -126,7 +126,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 border-gray-300 focus:ring-2 focus:ring-kenya-blue focus:border-transparent"
+                    className="mt-2 border-gray-300 focus:ring-2 focus:ring-tech-primary focus:border-transparent"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -140,7 +140,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 border-gray-300 focus:ring-2 focus:ring-kenya-blue focus:border-transparent"
+                    className="mt-2 border-gray-300 focus:ring-2 focus:ring-tech-primary focus:border-transparent"
                     placeholder="Enter your email address"
                   />
                 </div>
@@ -154,7 +154,7 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="mt-2 border-gray-300 focus:ring-2 focus:ring-kenya-blue focus:border-transparent"
+                    className="mt-2 border-gray-300 focus:ring-2 focus:ring-tech-primary focus:border-transparent"
                     placeholder="Tell us about your project or how we can help you"
                   />
                 </div>
@@ -162,7 +162,7 @@ const ContactSection = () => {
                 <Button 
                   type="submit" 
                   disabled={contactMutation.isPending}
-                  className="w-full bg-gradient-to-r from-kenya-blue to-kenya-green text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+                  className="w-full bg-gradient-to-r from-tech-primary to-tech-purple text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
                 >
                   {contactMutation.isPending ? (
                     <>
