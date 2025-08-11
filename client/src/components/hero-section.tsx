@@ -44,26 +44,23 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
         <motion.h1 
           {...fadeInUp}
-          className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-2xl"
-          style={{ textShadow: '0 4px 8px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.9)' }}
+          className="text-5xl md:text-7xl font-bold mb-6"
         >
-          Empowering <span className="text-blue-300 drop-shadow-lg">Digital</span> Innovation
+          Empowering <span className="text-blue-400">Digital</span> Innovation
         </motion.h1>
         
         <motion.h2 
           {...fadeInUp}
           transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-          className="text-2xl md:text-4xl font-light mb-8 drop-shadow-xl"
-          style={{ textShadow: '0 3px 6px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.9)' }}
+          className="text-2xl md:text-4xl font-light mb-8"
         >
-          with Cutting-Edge <span className="text-cyan-300 font-semibold">Technology Solutions</span>
+          with Cutting-Edge <span className="text-blue-300 font-semibold">Technology Solutions</span>
         </motion.h2>
         
         <motion.p 
           {...fadeInUp}
           transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
-          className="text-xl md:text-2xl mb-10 drop-shadow-lg"
-          style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 1px 2px rgba(0,0,0,0.9)' }}
+          className="text-xl md:text-2xl mb-10"
         >
           From stunning websites to powerful mobile apps and custom software - we transform your vision into digital reality
         </motion.p>
@@ -74,7 +71,7 @@ const HeroSection = () => {
         >
           <Button 
             onClick={scrollToContact}
-            className="bg-gradient-to-r from-tech-primary to-tech-purple hover:from-tech-primary/90 hover:to-tech-purple/90 text-white font-semibold px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
             <span>Contact Us Today</span>
             <ArrowRight className="ml-3" size={20} />
