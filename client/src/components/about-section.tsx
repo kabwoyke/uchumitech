@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const AboutSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   const stats = [
     { number: "50+", label: "Projects Completed" },
@@ -19,8 +19,9 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center" ref={ref}>
             <motion.div
-              {...slideInLeft}
-              animate={isInView ? "animate" : "initial"}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 About <span className="kenya-blue">UchumiTech</span>
@@ -54,8 +55,9 @@ const AboutSection = () => {
             </motion.div>
             
             <motion.div
-              {...slideInRight}
-              animate={isInView ? "animate" : "initial"}
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               <img 
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 

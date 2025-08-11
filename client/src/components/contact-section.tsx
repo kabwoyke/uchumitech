@@ -21,7 +21,7 @@ const ContactSection = () => {
   });
   
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
   const { toast } = useToast();
 
   const contactMutation = useMutation({
@@ -111,8 +111,9 @@ const ContactSection = () => {
           <div className="grid lg:grid-cols-2 gap-12" ref={ref}>
             {/* Contact Form */}
             <motion.div
-              {...slideInLeft}
-              animate={isInView ? "animate" : "initial"}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -179,8 +180,9 @@ const ContactSection = () => {
             
             {/* Contact Information */}
             <motion.div
-              {...slideInRight}
-              animate={isInView ? "animate" : "initial"}
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               <Card className="bg-gray-50 border-0">
                 <CardContent className="p-8">
