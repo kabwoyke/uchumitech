@@ -13,28 +13,28 @@ const ServicesSection = () => {
     {
       icon: Code,
       title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies. From simple business sites to complex e-commerce platforms, we create digital experiences that convert.",
-      features: ["Responsive Design", "E-commerce Solutions", "CMS Integration", "SEO Optimization"],
-      gradient: "from-tech-primary to-blue-600",
+      description: "Minimal, fast-loading websites and web applications built with modern frameworks. Clean design meets powerful functionality.",
+      features: ["Modern Frameworks", "Performance Optimized", "Responsive Design", "SEO Ready"],
+      color: "bg-blue-600",
     },
     {
       icon: Smartphone,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile applications that engage users and drive business growth. From concept to app store deployment, we handle it all.",
-      features: ["iOS & Android", "Cross-Platform", "UI/UX Design", "App Store Optimization"],
-      gradient: "from-tech-accent to-cyan-500",
+      title: "Mobile Applications",
+      description: "Cross-platform mobile apps with intuitive interfaces. Built for performance and user engagement across all devices.",
+      features: ["Cross-Platform", "Native Performance", "Clean UI/UX", "App Store Ready"],
+      color: "bg-gray-800",
     },
     {
       icon: Settings,
-      title: "Custom Software Solutions",
-      description: "Tailored software solutions designed specifically for your business needs. From automation tools to enterprise systems, we build software that scales.",
-      features: ["Business Automation", "Database Solutions", "API Development", "Cloud Integration"],
-      gradient: "from-tech-secondary to-blue-600",
+      title: "Custom Software",
+      description: "Tailored business solutions that streamline workflows and enhance productivity. Scalable architecture for growing businesses.",
+      features: ["Business Logic", "API Development", "Database Design", "Cloud Solutions"],
+      color: "bg-purple-600",
     },
   ];
 
   return (
-    <section id="services" className="py-20 bg-white scroll-mt-20">
+    <section id="services" className="py-20 bg-gray-50 scroll-mt-20">
       <div className="container mx-auto px-6">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -42,9 +42,11 @@ const ServicesSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Our Services</h2>
-          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto">
-            We offer comprehensive digital solutions tailored to transform your business and accelerate your growth in the digital landscape.
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
+            Our <span className="text-blue-600 font-medium">Services</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
+            Professional digital solutions designed to elevate your business with clean, efficient technology.
           </p>
         </motion.div>
         
@@ -61,19 +63,19 @@ const ServicesSection = () => {
               whileHover={cardHover}
               className="service-card"
             >
-              <Card className="h-full border border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="h-full border-0 bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300 group">
                 <CardContent className="p-8">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center mb-6`}>
-                    <service.icon className="text-white text-2xl" size={28} />
+                  <div className={`w-14 h-14 ${service.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <service.icon className="text-white" size={24} />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <h3 className="text-xl font-medium text-gray-900 mb-4">{service.title}</h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed font-light">
                     {service.description}
                   </p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {service.features.map((feature) => (
-                      <li key={feature} className="flex items-center text-gray-600">
-                        <Check className="text-tech-accent mr-3" size={16} />
+                      <li key={feature} className="flex items-center text-sm text-gray-500">
+                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3"></div>
                         {feature}
                       </li>
                     ))}

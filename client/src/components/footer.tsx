@@ -14,6 +14,7 @@ const Footer = () => {
     { href: "home", label: "Home" },
     { href: "about", label: "About Us" },
     { href: "services", label: "Services" },
+    { href: "tools", label: "Tools" },
     { href: "projects", label: "Projects" },
     { href: "contact", label: "Contact" },
   ];
@@ -46,11 +47,11 @@ const Footer = () => {
           {/* Company Info */}
           <motion.div {...fadeInUp}>
             <div className="text-2xl font-bold mb-4">
-              <span className="tech-primary">UchumiTech</span>
-              <span className="tech-secondary">Solution</span>
+              <span className="text-white">Protrixx</span>
+              <span className="text-blue-400 ml-1">Tech</span>
             </div>
-            <p className="text-gray-400 mb-4">
-              Empowering businesses worldwide with cutting-edge technology solutions.
+            <p className="text-gray-400 mb-4 font-light">
+              Crafting minimal, professional digital experiences with cutting-edge technology.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (

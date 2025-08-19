@@ -18,6 +18,7 @@ const Navigation = () => {
     { href: "home", label: "Home" },
     { href: "about", label: "About" },
     { href: "services", label: "Services" },
+    { href: "tools", label: "Tools" },
     { href: "projects", label: "Projects" },
     { href: "contact", label: "Contact" },
   ];
@@ -36,8 +37,8 @@ const Navigation = () => {
             transition={{ delay: 0.2 }}
             className="text-2xl font-bold"
           >
-            <span className="tech-primary">UchumiTech</span>
-            <span className="tech-secondary">Solution</span>
+            <span className="text-gray-900">Protrixx</span>
+            <span className="text-blue-600 ml-1">Tech</span>
           </motion.div>
           
           {/* Desktop Navigation */}

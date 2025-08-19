@@ -70,7 +70,7 @@ const ContactSection = () => {
       icon: Mail,
       title: "Email Us",
       description: "edwardkabwoy@gmail.com",
-      bgColor: "bg-kenya-blue",
+      bgColor: "bg-blue-600",
     },
     {
       icon: MapPin,

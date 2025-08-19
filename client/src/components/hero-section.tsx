@@ -20,8 +20,8 @@ const HeroSection = () => {
           backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-tech-dark/90 via-tech-primary/80 to-tech-purple/75"></div>
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-blue-900/90 to-gray-800/95"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
       
       {/* Floating Elements */}
@@ -44,25 +44,19 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
         <motion.h1 
           {...fadeInUp}
-          className="text-5xl md:text-7xl font-bold mb-6"
+          className="text-6xl md:text-8xl font-light mb-8 tracking-tight"
         >
-          Empowering <span className="text-blue-400">Digital</span> Innovation
+          <span className="text-white font-extralight">Protrixx</span>
+          <br />
+          <span className="text-blue-400 font-medium">Tech Solutions</span>
         </motion.h1>
-        
-        <motion.h2 
-          {...fadeInUp}
-          transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-          className="text-2xl md:text-4xl font-light mb-8"
-        >
-          with Cutting-Edge <span className="text-blue-300 font-semibold">Technology Solutions</span>
-        </motion.h2>
         
         <motion.p 
           {...fadeInUp}
           transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
-          className="text-xl md:text-2xl mb-10"
+          className="text-xl md:text-2xl mb-12 font-light max-w-3xl mx-auto leading-relaxed"
         >
-          From stunning websites to powerful mobile apps and custom software - we transform your vision into digital reality
+          Crafting minimal, professional digital experiences with cutting-edge technology
         </motion.p>
         
         <motion.div 
@@ -71,7 +65,7 @@ const HeroSection = () => {
         >
           <Button 
             onClick={scrollToContact}
-            className="bg-tech-primary hover:bg-tech-secondary text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            className="bg-white text-gray-900 hover:bg-gray-100 font-medium px-12 py-6 text-lg rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
             <span>Contact Us Today</span>
             <ArrowRight className="ml-3" size={20} />

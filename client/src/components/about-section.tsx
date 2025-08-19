@@ -23,15 +23,14 @@ const AboutSection = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                About <span className="tech-primary">UchumiTech</span>
-                <span className="tech-secondary">Solution</span>
+              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8 leading-tight">
+                About <span className="text-blue-600 font-medium">Protrixx Tech Solutions</span>
               </h2>
-              <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
-                Founded with a vision to transform businesses through technology, UchumiTechSolution specializes in crafting innovative digital solutions that drive growth and efficiency. We believe every business deserves cutting-edge technology that scales with their ambitions.
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed font-light">
+                We craft minimal, professional digital experiences that prioritize functionality and elegance. Our approach combines clean design principles with cutting-edge technology to deliver solutions that are both beautiful and powerful.
               </p>
-              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                Our expert team of developers, designers, and strategists combines technical excellence with creative innovation to deliver solutions that don't just meet expectations - they revolutionize how you do business.
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed font-light">
+                From innovative web applications to intelligent AI tools, we focus on creating products that enhance productivity and simplify complex workflows.
               </p>
               
               <div className="grid grid-cols-3 gap-4 md:gap-6 text-center">
@@ -60,9 +59,9 @@ const AboutSection = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="UchumiTechSolution team working together" 
-                className="rounded-2xl shadow-2xl w-full h-auto"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                alt="Protrixx Tech Solutions - Modern workspace" 
+                className="rounded-3xl shadow-xl w-full h-auto"
               />
             </motion.div>
           </div>
