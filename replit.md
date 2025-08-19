@@ -1,8 +1,8 @@
-# UchumiTechSolution Portfolio Website
+# Protrixx Tech Solutions Portfolio Website
 
 ## Overview
 
-This is a modern, full-stack portfolio website for UchumiTechSolution, a Kenyan technology company specializing in web development, mobile apps, and custom software solutions. The application features a beautiful single-page design with smooth animations, a contact form with email integration, and showcases the company's services and completed projects.
+This is a modern, minimal, and professional full-stack portfolio website for Protrixx Tech Solutions, a technology company specializing in clean digital experiences, innovative tools, and custom software solutions. The application features a beautiful single-page design with smooth animations, a contact form with email integration, showcases the company's services, and highlights the Protrixx Tools suite including YouTube Downloader, ProtrixxAI, and ProtrixxLearn.
 
 ## User Preferences
 
