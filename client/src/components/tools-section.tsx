@@ -77,11 +77,10 @@ const ToolsSection = () => {
                 </ul>
 
                 <Button
-                  className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium py-3 rounded-xl transition-all duration-300 group-hover:bg-blue-600"
-                  onClick={() => window.open(tool.href, '_blank')}
+                  className="w-full bg-gray-200 hover:bg-gray-300 text-gray-600 font-medium py-3 rounded-xl transition-all duration-300 cursor-not-allowed"
+                  disabled
                 >
-                  Launch Tool
-                  <ExternalLink className="ml-2" size={16} />
+                  Coming Soon
                 </Button>
               </motion.div>
             ))}

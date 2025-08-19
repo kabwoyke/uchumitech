@@ -20,8 +20,8 @@ const HeroSection = () => {
           backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-tech-dark/90 via-tech-primary/80 to-tech-purple/75"></div>
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 via-blue-900/90 to-gray-800/95"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
       
       {/* Floating Elements */}
